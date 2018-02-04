@@ -1,0 +1,36 @@
+<div class="row text-center">
+<h1>Welcome to Spanish App</h1>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <carousel class="text-center" *ngIf='homeImageList'>
+      <slide>
+        <a routerLink='/lessons/' routerLinkActive="active" (click)='preventNormal($event, imageObj)'>
+        <img class="img-main-carousel" src="{{lessonsListDefaultImage}}" alt="First slide" style="display: block; width: 100%;">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <a routerLink='/lessons/' routerLinkActive="active" (click)='preventNormal($event, imageObj)'>
+            <h3>See all lessons</h3>
+          </a>
+          <p>
+          <a routerLink='/lessons/' routerLinkActive="active"  class="btn btn-primary">View Lessons</a>
+          </p>
+        </div>
+      </slide>
+      <slide *ngFor='let imageObj of homeImageList '>
+        <a routerLink='/lessons/{{imageObj.slug}}' routerLinkActive="active" >
+      <img class="img-main-carousel" [src]="imageObj.image || ''" alt="First slide" style="
+      display: block; width: 100%;">
+         </a>
+        <div class="carousel-caption d-none d-md-block">
+         <a routerLink='/lessons/{{imageObj.slug}}' routerLinkActive="active" >
+          <h3>{{ imageObj.name}}</h3>
+          </a>
+          <p>
+          <a routerLink='/lessons/{{imageObj.slug}}' routerLinkActive="active"  class="btn btn-primary">Go!</a>
+          </p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>

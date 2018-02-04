@@ -1,0 +1,29 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" (click)="isCollapsed = !isCollapsed" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink='' routerLinkActive="active" >Spanish App</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" [collapse]=isCollapsed>
+      <app-search [passedQuery]="query"></app-search>
+      <ul class="nav navbar-nav navbar-right">
+        <li routerLink="lessons/" routerLinkActiv="active"><a routerLink="lessons/" routerLinkActiv="active">Lessons</a></li>
+
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<div class="container main-container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="container text-center">Spanish App</footer>

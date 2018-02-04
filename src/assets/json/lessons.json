@@ -1,0 +1,31 @@
+[{
+	"name":"Introduce Yourself in Spanish",
+	"slug":"item-1",
+	"embed": "6KwxK1MCMbo",
+	"image": "assets/images/nature/4.jpg",
+	"featured": true,
+	"questions": ["Hello" ,"Mucho gusto"],
+	"answers":["Heya","Ola","Holla"],
+	"solutions": ["Holla", "Nice to meet you"]
+
+},
+	{"name":"Food vocabulary",
+	"slug":"item-2",
+	"featured": true,
+	"image": "assets/images/nature/5.jpg",
+	"embed": "MHnldf7lvnQ",
+	"questions": ["Sauce" ,"las patatas"],
+	"answers":["Las Salchichas","Los Chitos","La Salsa"],
+	"solutions": ["La Salsa", "potatoes"]
+},
+	{"name":"Numbers",
+	"slug":"item-3",
+	"embed": "gjq_judNIN8",
+	"image": "assets/images/nature/6.jpg",
+	"featured": true,
+	"questions": ["four" ,"diez"],
+	"answers":["cinco","siete","cuatro"],
+	"solutions": ["cuatro", "ten"]
+}
+	
+]

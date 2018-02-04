@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+ .main-container{
+ 	min-height: 800px;
+ 	margin-bottom:20px;
+ }
+
+.img-main-carousel{
+	max-height:500px;
+	margin: 0 auto;
+}
+
+.carousel-control.right {
+	cursor:pointer;
+}
+.carousel-control.left {
+	cursor:pointer;
+}
+
+.searchInline .navbar-left{
+	float:none !important;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a h3 {
+	font-size:30px;
+	color:white;
+	 text-shadow: 0 0 5px black;
+}
+
+/** {
+	border: 1px red solid;
+	border-radius: 5px;
+}*/
+.row{
+	 margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+@media only screen and (max-width: 700px) {
+	.responsiveVideo {
+		width: 100%;	
+	}
+}

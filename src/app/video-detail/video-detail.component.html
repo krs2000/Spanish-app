@@ -1,0 +1,13 @@
+<div class="row text-center" *ngIf="!lesson">
+  Loading...</div>
+<h1 class="text-center">{{lesson?.name}}</h1>
+<hr/>
+<div class="row text-center ">
+  <iframe class="responsiveVideo" *ngIf='lesson?.embed' width="560" height="315" [src]="getEmbedUrl(lesson) | safe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <div *ngIf='!lesson?.embed && lesson?.image'> <img [src]='lesson?.image' alt="{lesson?.name}" image *ngIf='lesson.image'></div>
+</div>
+<hr/>
+<div class="row text-center">
+  <p>When you've finished watching the video, you can test yourself with a task!</p>
+  <a routerLink="/task/{{lesson?.slug}}" routerLinkActiv="active" class="btn btn-success" role="button">Go to task</a>
+</div>
